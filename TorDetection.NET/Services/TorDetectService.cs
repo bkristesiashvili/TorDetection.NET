@@ -9,7 +9,7 @@ using TorDetection.Services.Converters;
 
 namespace TorDetection.Services
 {
-    public sealed class TorDetectServiceFactory : ITorDetectService
+    public sealed class TorDetectService : ITorDetectService
     {
         #region CTOR
 
