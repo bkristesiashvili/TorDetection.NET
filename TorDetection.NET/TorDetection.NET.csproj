@@ -11,6 +11,8 @@
     <PackageIcon>tor-logo.png</PackageIcon>
     <PackageIconUrl />
     <SignAssembly>true</SignAssembly>
+    <PackageTags>Application Access From Tor Network Detection</PackageTags>
+    <PackageProjectUrl>https://github.com/bkristesiashvili/TorDetection.NET</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
