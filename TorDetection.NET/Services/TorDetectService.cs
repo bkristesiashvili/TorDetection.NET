@@ -13,7 +13,7 @@ namespace TorDetection.Services
     {
         #region CTOR
 
-        public TorDetectServiceFactory()
+        public TorDetectService()
         {
             Errors = new List<Exception>();
         }

@@ -13,6 +13,10 @@
     <SignAssembly>true</SignAssembly>
     <PackageTags>Application Access From Tor Network Detection</PackageTags>
     <PackageProjectUrl>https://github.com/bkristesiashvili/TorDetection.NET</PackageProjectUrl>
+    <Authors>Besik Kristesiashvili</Authors>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

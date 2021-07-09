@@ -20,7 +20,7 @@ namespace TorDetection
             if (@this == null)
                 throw new ArgumentNullException(nameof(@this));
 
-            @this.AddSingleton<ITorDetectService, TorDetectServiceFactory>();
+            @this.AddSingleton<ITorDetectService, TorDetectService>();
 
             return @this;
         }
