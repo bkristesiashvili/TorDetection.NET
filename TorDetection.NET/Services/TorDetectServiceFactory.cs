@@ -42,9 +42,8 @@ namespace TorDetection.Services
             {
                 if (ipAddress == null)
                     throw new ArgumentNullException(nameof(ipAddress));
-
-                var ip = ipAddress.ToString();
-                var completedUrl = string.Format(TorConstants.URL, ip);
+                    
+                var completedUrl = string.Format(TorConstants.URL, ipAddress);
 
                 using var webCLient = new WebClient();
                 string data = webCLient.DownloadStringTaskAsync(completedUrl).Result;
