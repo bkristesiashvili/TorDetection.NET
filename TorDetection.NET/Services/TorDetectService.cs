@@ -87,7 +87,7 @@ namespace TorDetection.Services
 
             try
             {
-                if (string.IsNullOrEmpty(data) || string.IsNullOrWhiteSpace(data))
+                if (string.IsNullOrWhiteSpace(data))
                     throw new ArgumentException($"JSON: {nameof(data)}");
 
                 var option = new JsonSerializerOptions();
