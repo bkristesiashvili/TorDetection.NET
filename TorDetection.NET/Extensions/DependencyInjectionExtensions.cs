@@ -10,6 +10,11 @@ namespace TorDetection
     {
         #region EXTENSION METHODS
 
+        /// <summary>
+        /// Add Tor Detection Service to the applications services collection
+        /// </summary>
+        /// <param name="this"></param>
+        /// <returns></returns>
         public static IServiceCollection AddTorDetectionService(this IServiceCollection @this)
         {
             if (@this == null)

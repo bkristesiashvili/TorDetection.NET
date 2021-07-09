@@ -10,6 +10,12 @@ namespace TorDetection
     {
         #region EXTENSION METHODS
 
+        /// <summary>
+        /// Protects the application accessing from TOR network
+        /// </summary>
+        /// <param name="this"></param>
+        /// <param name="redirectUrl">redirect URL where the request will be redirected if access will be presented.</param>
+        /// <returns></returns>
         public static IApplicationBuilder UseTorDetection(this IApplicationBuilder @this,
             string redirectUrl)
         {

@@ -41,9 +41,17 @@ namespace TorDetection.Middleware
                 if (service == null)
                     throw new ArgumentNullException($"TOR DETECTION: {nameof(service)}");
 
-                var path = context.Request.Host;
+                var host = context.Request.Host;
 
-                if (path.Host == "localhost")
+                if (host.Host == "localhost")
+                {
+                    await _requestDelegate(context);
+                    return;
+                }
+
+                var path = context.Request.Path;
+
+                if(path == _redirectUrl)
                 {
                     await _requestDelegate(context);
                     return;
