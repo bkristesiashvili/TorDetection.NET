@@ -22,12 +22,20 @@ namespace TorDetection.Services
 
         #region IMPLEMENTED PROPERTIES
 
+        /// <summary>
+        /// Handles any error
+        /// </summary>
         public ICollection<Exception> Errors { get; }
 
         #endregion
 
         #region INTERNAL IMPLEMENTED METHODS
 
+        /// <summary>
+        /// Get tor user object information using IP address
+        /// </summary>
+        /// <param name="ipAddress">Clients remote IP address</param>
+        /// <returns></returns>
         public TorObject GetTorObjectByIpAddress(IPAddress ipAddress)
         {
             try
@@ -50,6 +58,11 @@ namespace TorDetection.Services
             }
         }
 
+        /// <summary>
+        /// Returns true if client is Tor User
+        /// </summary>
+        /// <param name="torUser"></param>
+        /// <returns></returns>
         public bool IsTorUser(TorObject torUser)
         {
             if (torUser == null) return false;
