@@ -5,4 +5,4 @@
 
 ### ``ITorDetectService`` - access Tor Detection Service
 
-#### Test Project [Test ASP.NET Core Project](http://libsoft.somee.com/){:target="_blank"} - Access from [TOR BROWSER](https://www.torproject.org/download/){:target="_blank"}.
+#### Test Project [Test ASP.NET Core Project](http://libsoft.somee.com/){:target="\_blank\"} - Access from [TOR BROWSER](https://www.torproject.org/download/){:target="\_blank\"}.
