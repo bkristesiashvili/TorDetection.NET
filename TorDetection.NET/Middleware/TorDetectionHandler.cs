@@ -59,7 +59,7 @@ namespace TorDetection.Middleware
 
                 var ipaddress = context.Connection.RemoteIpAddress;
 
-                var result = await Task.FromResult(service.GetTorObjectByIpAddress(ipaddress));
+                var result = service.GetTorObjectByIpAddress(ipaddress);
 
                 if (service.IsTorUser(result))
                     context.Response.Redirect(_redirectUrl);
